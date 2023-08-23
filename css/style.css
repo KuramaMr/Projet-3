@@ -438,6 +438,41 @@ i.fa-solid.fa-info {
     }
 }
 
+/****** Renseignement ***********/
+
+.containerFooter {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerFoot {
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    padding-left: 70px;
+    padding-top: 45px;
+    padding-bottom: 51px;
+}
+
+.containerFoot p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+}
+
+.listcontainer {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.listFooter {
+    padding-bottom: 12px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
