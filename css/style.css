@@ -94,8 +94,9 @@ body {
 }
 
 .appBar__nav a:hover {
+    width: 162px;
     color: #0065FC;
-    border-top: 1px solid #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 /****** Texte Infos Recherche ***********/
@@ -457,7 +458,7 @@ i.fa-solid.fa-info {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 767.98px) {
     .activitesCard {
         display: flex;
         flex-direction: column;
@@ -468,6 +469,7 @@ i.fa-solid.fa-info {
         width: 315px;
         margin-left: 20px;
         margin-right: 20px;
+        margin: ;
     }
 
     .acard-title {
