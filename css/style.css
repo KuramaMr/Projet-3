@@ -152,6 +152,7 @@ input {
 
 ::placeholder {
     color: var(--black, #000);
+    opacity: 1;
     text-align: center;
     font-size: 18px;
     font-style: normal;
