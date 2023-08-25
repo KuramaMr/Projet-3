@@ -57,52 +57,36 @@ body {
 
 /****** NavBar ***********/
 
-.navBar {
+.appBar__nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.app__Barlogo {
-    display: flex;
+#app__Barlogo {
+    margin-right: auto;
     width: 61px;
     height: 19px;
     padding-top: 44px;
-    padding-bottom: 10px;
-    justify-content: center;
-    align-Items: center;
-    flex-shrink: 0;
-}
-
-.appBar__nav {
-    display: flex;
-    width: 381px;
-    height: 19px;
-    padding-left: 0px;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 67px;
-    flex-shrink: 0;
 }
 
 .appBar__nav a {
-    text-align: center;
-    text-decoration: none;
-    border-top: 1px solid transparent;
     color: black;
-    padding-top: 48px;
+    text-decoration: none;
+    padding: 48px 24.5px 0px 24.5px;
 }
 
 .appBar__nav a:hover {
-    width: 162px;
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
 }
+
 
 /****** Texte Infos Recherche ***********/
 
 .texteTitre {
-    padding-top: 53px;
+    margin-top: 53px;
 }
 
 .texteTitre h2 {
@@ -202,8 +186,8 @@ button {
 }
 
 .btn:hover {
-    transition-duration: 1s;
     background-color: #DEEBFF;
+    transition-duration: 1s;
 }
 
 /****** Infos Disponibles ***********/
