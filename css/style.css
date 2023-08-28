@@ -55,6 +55,22 @@ body {
     color: var(--main-bg-color)
 }
 
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    .main-container {
+        width: 100%;
+        max-width: 768px;
+        margin: 30px 0 0 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+}
+
 /****** NavBar ***********/
 
 .appBar__nav {
@@ -82,6 +98,33 @@ body {
     color: var(--main-color);
 }
 
+@media (max-width:1024px) {
+
+    .appBar__nav a {
+        color: black;
+        text-decoration: none;
+        padding: 48px 24.5px 0px 24.5px;
+    }
+
+    .appBar__nav a:hover {
+        border-top: 0px solid black;
+        color: black;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+
+    .appBar__nav a:hover,
+    .navBarhebergements {
+        color: var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        padding-bottom: 23px;
+
+    }
+    
+
+}
 
 /****** Texte Infos Recherche ***********/
 
@@ -155,6 +198,16 @@ button {
     border-radius: 0 15px 15px 0;
 }
 
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    
+
+}
+
 /****** Filtres ***********/
 .filtres {
     color: var(--black, #000);
@@ -183,11 +236,22 @@ button {
     text-decoration: none;
     align-items: center;
     padding: 15px 19px;
-}
+    transition: transform 400ms 1s, background-color 1s;
+}    
 
 .btn:hover {
-    background-color: #DEEBFF;
-    transition-duration: 1s;
+        transform: scale(1.2);
+        background-color: #DEEBFF;
+}
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    
+
 }
 
 /****** Infos Disponibles ***********/
@@ -199,10 +263,14 @@ button {
 }
 
 i.fa-solid.fa-info {
+    font-size: 12px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
-    padding: 7px 10px;
-    font-size: 12px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .infosDisponible p {
@@ -211,6 +279,27 @@ i.fa-solid.fa-info {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    .infosDisponible{
+        align-items: normal;
+    }
+
+    .infosDisponible p {
+        width: 298px;
+        height: 57px;
+    }
+
+    i.fa-solid.fa-info {
+        margin-left: 20px;
+        
+    }
 }
 
 /****** Hebergements And Populaires ***********/
@@ -235,6 +324,16 @@ i.fa-solid.fa-info {
     padding-right: 40px;
     padding-bottom: 34px;
     box-sizing: border-box;
+}
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    
+
 }
 
 /****** Hebergements ***********/
@@ -303,6 +402,17 @@ i.fa-solid.fa-info {
     line-height: normal;
     padding-top: 40px;
 }
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    
+
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -458,17 +568,36 @@ i.fa-solid.fa-info {
 }
 
 @media (max-width: 767.98px) {
+
+    .activitesMarseille {
+        margin-bottom: 80px;
+    }
+
+    .activitesTitre {
+        width: 212px;
+        height: 30.019px;
+        margin-bottom: 5px;
+    }
+
     .activitesCard {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
 
     .aCard  {
-        width: 315px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin: ;
+        width: 334px;
+        height: 190px;
+        margin-left: 19px;
+        margin-right: 22px;
+        margin-bottom: 0px;
+        margin-top: 24px;
+    }
+
+    .aCard img {
+        width: 334px;
+        height: 134px;
     }
 
     .acard-title {
@@ -510,4 +639,32 @@ i.fa-solid.fa-info {
 
 .listFooter {
     padding-bottom: 12px;
+}
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    .containerFooter {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 49px;
+    }
+    
+    .containerFoot {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .containerFoot p {
+        padding-left: 30px;
+        margin-top: 45px;
+    }
+
+    .containerFoot ul {
+        padding-left: 30px;
+    }
 }
