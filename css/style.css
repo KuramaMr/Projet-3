@@ -275,13 +275,45 @@ button {
     text-decoration: none;
     align-items: center;
     padding: 15px 19px;
-    transition: transform 400ms 1s, background-color 1s;
-}    
+    animation-name: retire;
+    animation-duration: 1s;
+    transform: scale(1);
+}
 
 .btn:hover {
-        transform: scale(1.2);
-        background-color: #DEEBFF;
+    animation-name: maintient;
+    animation-duration: 1s;
+    transform: scale(1.1);
+    animation-fill-mode: forwards;
 }
+
+@keyframes maintient {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+        background-color: #DEEBFF;
+    }
+}
+
+@keyframes retire {
+    0% {
+        transform: scale(1.1);
+        background-color: #DEEBFF;
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        
+    }
+}
+
 
 @media (max-width:1024px) {
    
