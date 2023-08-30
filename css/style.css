@@ -18,6 +18,7 @@
 body {
     display: flex;
     justify-content: center;
+    min-width: 375px;
 }
 
 .main-container {
@@ -67,6 +68,10 @@ body {
         margin: 0px 0 0 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    .body {
+        min-width: 375px;
     }
 
 }
@@ -148,7 +153,6 @@ nav a:hover {
         width: 100%;
         text-align: center;
         padding-top: 0;
-        padding-bottom: 38px;
     }
 
     nav img{
@@ -176,7 +180,35 @@ nav a:hover {
 }
 
 .texteTitre p {
-    padding-bottom: 20px;
+    padding-bottom: 36px;
+}
+
+@media (max-width:1024px) {
+   
+    
+}
+
+@media (max-width: 767.98px) {
+    .texteTitre { 
+        margin-left: 20px;
+        margin-top: 31px;
+    }
+
+    .texteTitre h2 {
+        padding-bottom: 13px;
+        margin-right: 57px;
+      }
+
+    .texteTitre p{ 
+        width: 315px;
+        height: 19px;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 }
 
 /*** Rechercher ***/
@@ -186,11 +218,6 @@ nav a:hover {
     align-items: center;
     margin-bottom: 32px;
     height: 49px;
-}
-
-.form label {
-    height: 49px;
-    width: 236px;
 }
 
 .form input {
@@ -206,7 +233,9 @@ i.fa-solid.fa-location-dot {
     border: 1px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
-    padding:15px;
+    width: 14px;
+    height: 18px;
+    padding: 16px 18px 15px 18px;
 }
 
 input {
@@ -237,13 +266,50 @@ button {
     border-radius: 0 15px 15px 0;
 }
 
+.btnmobile {
+    display: none;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    color: transparent;
+    font-size: 17px;
+    background-color: transparent;
+    border-radius: 0px 15px 15px 0px;
+}
+
 @media (max-width:1024px) {
    
     
 }
 
 @media (max-width: 767.98px) {
-    
+
+    .form{
+        margin-left: 22px;
+    }
+
+    input {
+        padding: 14px 65px 14px 24px;
+    }
+
+    button {
+        display: none;
+    }
+
+    .btnmobile {
+        display: contents;
+    }
+
+    i.fa-solid.fa-magnifying-glass {
+        color: white;
+        background-color: var(--main-color);
+        border-top: 1px solid var(--main-color);
+    }
 
 }
 
@@ -316,12 +382,48 @@ button {
 
 
 @media (max-width:1024px) {
-   
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
 }
 
 @media (max-width: 767.98px) {
     
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        padding-bottom: 0px;
+    }
+
+    .textfiltres {
+        margin-left: 20px;
+    }
+
+    .boxFiltres {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: normal;
+        gap: 14px;
+        margin: 15px 20px 35px 20px;
+    }
+
+    .btn {
+        margin: 0px
+    }
+
+    .btn p {
+        color: var(--black, #000);
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 98px;
+    }
 
 }
 
@@ -360,6 +462,7 @@ i.fa-solid.fa-info {
 @media (max-width: 767.98px) {
     .infosDisponible{
         align-items: normal;
+        padding-bottom: 17px;
     }
 
     .infosDisponible p {
@@ -640,6 +743,10 @@ i.fa-solid.fa-info {
 
 @media (max-width: 767.98px) {
 
+    .activitesTitre {
+        margin-left: 22px;
+    }
+
     .activitesMarseille {
         margin-bottom: 80px;
     }
@@ -706,6 +813,11 @@ i.fa-solid.fa-info {
 .listcontainer {
     list-style: none;
     padding-top: 20px;
+}
+
+.listcontainer a{
+    text-decoration: none;
+    color: black;
 }
 
 .listFooter {
