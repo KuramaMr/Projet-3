@@ -18,7 +18,6 @@
 body {
     display: flex;
     justify-content: center;
-    min-width: 375px;
 }
 
 .main-container {
@@ -180,7 +179,7 @@ nav a:hover {
 }
 
 .texteTitre p {
-    padding-bottom: 36px;
+    padding-bottom: 20px;
 }
 
 @media (max-width:1024px) {
@@ -328,7 +327,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .boxFiltres {
     display: flex;
-    gap: 36px;
+    gap: 43px;
     justify-content: center;
 }
 
@@ -340,7 +339,7 @@ i.fa-solid.fa-magnifying-glass {
     border-radius: 25px;
     text-decoration: none;
     align-items: center;
-    padding: 15px 19px;
+    padding: 12px 20px 12px 20px;
     animation-name: retire;
     animation-duration: 1s;
     transform: scale(1);
@@ -384,8 +383,7 @@ i.fa-solid.fa-magnifying-glass {
 @media (max-width:1024px) {
     .filtres {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     
 }
@@ -811,13 +809,31 @@ i.fa-solid.fa-info {
         margin-top: 34px;
         margin-bottom: 69px;
     }
-    .aCard img {
-        width: 100%;
-        height:210px;
+
+    .activitesCard{
+        padding: 0;
     }
+
+    .aCard img {
+        height:211px;
+    }
+
     .activitesMarseille {
         display: flex;
         margin-top: 70px;
+        margin-bottom: 0px;
+    }
+
+    .acard-txt {
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .acard-title {
+        padding: 0;
     }
 }
 
