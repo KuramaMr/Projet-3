@@ -76,9 +76,7 @@ body {
 }
 
 
-/****** NavBar ***********/
-
-
+/****** Barre de Navigation ***********/
 
 nav {
     display: flex;
@@ -591,9 +589,6 @@ i.fa-solid.fa-info {
 
     .hebergements-and-populaires {
         background-color: white;
-    }
-
-    .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
     }
