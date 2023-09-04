@@ -787,12 +787,6 @@ i.fa-solid.fa-info {
     border-radius: 20px 20px 0px 0px;
 }
 
-.aCard p {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 20px 0px 20px 10px ;
-}
-
 .acard-title{
     font-size: 16px;
     font-weight: 700;
@@ -839,17 +833,14 @@ i.fa-solid.fa-info {
 @media (max-width: 767.98px) {
 
     .activitesTitre {
+        width: 212px;
+        height: 30.019px;
+        margin-bottom: 5px;
         margin-left: 22px;
     }
 
     .activitesMarseille {
         margin-bottom: 80px;
-    }
-
-    .activitesTitre {
-        width: 212px;
-        height: 30.019px;
-        margin-bottom: 5px;
     }
 
     .activitesCard {
