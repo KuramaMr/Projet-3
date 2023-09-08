@@ -359,7 +359,7 @@ i.fa-solid.fa-magnifying-glass {
     0% {
         transform: scale(1);
     }
-    50% {
+    40% {
         transform: scale(1.2);
     }
     100% {
@@ -373,7 +373,7 @@ i.fa-solid.fa-magnifying-glass {
         transform: scale(1.1);
         background-color: #DEEBFF;
     }
-    50% {
+    40% {
         transform: scale(0.9);
     }
     100% {
