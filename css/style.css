@@ -315,6 +315,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 /****** Filtres ***********/
+
 .filtres {
     color: var(--black, #000);
     font-size: 17px;
@@ -430,6 +431,7 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 /****** Infos Disponibles ***********/
+
 .infosDisponible{
     display: flex;
     gap: 11px;
@@ -479,6 +481,7 @@ i.fa-solid.fa-info {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -502,6 +505,7 @@ i.fa-solid.fa-info {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     background-color: var(--main-bg-color);
@@ -639,6 +643,7 @@ i.fa-solid.fa-info {
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
