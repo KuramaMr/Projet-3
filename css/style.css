@@ -126,11 +126,6 @@ nav a:hover {
         margin-top: 21px;
     }
 
-    .navBarhebergements{
-        border-bottom: 3px solid var(--main-color);
-        color: var(--main-color);
-    }
-
     nav a {
         border-bottom: 3px solid #f2f2f2;
         border-top: none;
@@ -138,7 +133,7 @@ nav a:hover {
         width: 50%;
     }
 
-    nav a:hover {
+    nav a:active {
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
@@ -334,7 +329,7 @@ i.fa-solid.fa-magnifying-glass {
 
 .boxFiltres {
     display: flex;
-    gap: 43px;
+    gap: 22px;
     justify-content: center;
 }
 
@@ -387,12 +382,12 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .filtres {
         display: flex;
         align-items: center;
+        flex-flow: row wrap;
     }
-    
 }
 
 @media (max-width: 767.98px) {
@@ -403,6 +398,8 @@ i.fa-solid.fa-magnifying-glass {
         align-items: flex-start;
         gap: 0px;
         padding-bottom: 0px;
+        max-width: 731px;
+        flex-flow: row wrap;
     }
 
     .textfiltres {
